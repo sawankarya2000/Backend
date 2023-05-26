@@ -16,7 +16,12 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://192.168.1.8:5173', '*'],
+    origin: [
+      'http://localhost:5173',
+      'http://192.168.1.8:5173',
+      'https://647048f0c500214f3984e126--jazzy-flan-3afe3b.netlify.app',
+      '*',
+    ],
     credentials: true,
   })
 );
